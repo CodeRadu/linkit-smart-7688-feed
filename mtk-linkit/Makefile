@@ -10,14 +10,12 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/mtk-linkit
   TITLE:=Linkit smart 7688 support
-  MENU:=1
-  DEPENDS:=@TARGET_ramips_mt76x8_DEVICE_mediatek_linkit-smart-7688 \
-  	+gdbserver +curl +strace +coreutils +coreutils-stty \
+  DEPENDS:=+gdbserver +curl +strace +coreutils +coreutils-stty \
   	+avahi-nodbus-daemon +fstools +mjpg-streamer \
 	+uhttpd +rpcd +rpcd-mod-iwinfo +git +git-http +ksmbd-server \
 	+python3 +python3-pyserial +python3-pip +hidapi \
-	+libmraa +libupm +node +node-hid +node-cylon-firmata \
-	+luci +luci-theme-openwrt +luci-app-mjpg-streamer +luci-app-ksmbd +luci-lib-json \
+#	+libmraa +libupm +node +node-cylon-firmata \
+	+luci +luci-app-mjpg-streamer +luci-app-ksmbd +luci-lib-json \
 	+rpcd-mod-rpcsys +cgi-io +avrdude +spi-tools +uboot-envtools \
 	+kmod-fs-vfat +kmod-fs-exfat +kmod-i2c-core +kmod-i2c-ralink \
 	+kmod-nls-base +kmod-nls-cp437 +kmod-nls-iso8859-1 \
@@ -25,9 +23,9 @@ define Package/mtk-linkit
 	+kmod-sdhci-mt7620 +kmod-usb-storage \
 	+kmod-video-core +kmod-video-uvc \
 	+kmod-sound-core +alsa-utils \
-	+mtk-linkit-webui +mtk-sdk-wifi +tcpdump-mini
+	+mtk-linkit-webui +mtk-sdk-wifi +tcpdump-mini +node +node-cylon-firmata +libmraa +libupm
 
-  CATEGORY:=Base system
+  CATEGORY:=Board
   DEFAULT:=y
 endef
 
