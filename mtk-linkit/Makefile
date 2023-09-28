@@ -9,9 +9,9 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/mtk-linkit
-  TITLE:=MTK LinkIt Smart board support package
-  HIDDEN:=1
-  DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 \
+  TITLE:=Linkit smart 7688 support
+  MENU:=1
+  DEPENDS:=@TARGET_ramips_mt76x8_DEVICE_mediatek_linkit-smart-7688 \
   	+gdbserver +curl +strace +coreutils +coreutils-stty \
   	+avahi-nodbus-daemon +fstools +mjpg-streamer \
 	+uhttpd +rpcd +rpcd-mod-iwinfo +git +git-http +ksmbd-server \
