@@ -13,11 +13,11 @@ define Package/mtk-linkit
   HIDDEN:=1
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 \
   	+gdbserver +curl +strace +coreutils +coreutils-stty \
-  	+avahi-nodbus-daemon +fstools +mjpg-streamer \ # fstools replaces mountd
-	+uhttpd +rpcd +rpcd-mod-iwinfo +git +git-http +ksmbd \ # ksmbd replaces samba36-server
-	+python3 +python3-pyserial +python3-pip +hidapi \ # python3 replaces python
-	+libmraa +libupm +node +node-hid +node-cylon-firmata \ # removed yunbridge
-	+luci +luci-theme-openwrt +luci-app-mjpg-streamer +luci-app-samba6 +luci-lib-json \ # luci-app-samba6 replaces luci-app-samba
+  	+avahi-nodbus-daemon +fstools +mjpg-streamer \
+	+uhttpd +rpcd +rpcd-mod-iwinfo +git +git-http +ksmbd \
+	+python3 +python3-pyserial +python3-pip +hidapi \
+	+libmraa +libupm +node +node-hid +node-cylon-firmata \
+	+luci +luci-theme-openwrt +luci-app-mjpg-streamer +luci-app-samba4 +luci-lib-json \
 	+rpcd-mod-rpcsys +cgi-io +avrdude +spi-tools +uboot-envtools \
 	+kmod-fs-vfat +kmod-fs-exfat +kmod-i2c-core +kmod-i2c-ralink \
 	+kmod-nls-base +kmod-nls-cp437 +kmod-nls-iso8859-1 \
