@@ -18,7 +18,7 @@ define Package/mtk-linkit
 	+luci +luci-app-mjpg-streamer +luci-app-ksmbd +luci-lib-json \
 	+rpcd-mod-rpcsys +cgi-io +avrdude +spi-tools +uboot-envtools \
 	+mtk-linkit-webui +tcpdump-mini \
-	+libmraa +libupm \
+	+libmraa \
 	+uhttpd-mod-ubus
 
   CATEGORY:=Board
